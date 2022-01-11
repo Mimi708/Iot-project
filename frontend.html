@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Temperature And Humidity Sensor Simulator</title>
+    <style> 
+.container{
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  width: 80%;
+  height: 90vh;
+  margin: auto;
+}
+
+.left-container {
+        background-image: url('https://hsisensing.com/wp-content/uploads/2017/05/HSI-Blog-32.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: auto;
+        width: 50%;
+        padding: 50px;
+        border-right: 1px solid lightgrey;
+        height: 80vh;
+}
+.right-container {
+  width: 50%;
+  float:right;
+  text-align: center;
+}
+.form-group {
+  color: red;
+  font-family: "Roboto", sans-serif;
+  padding: 0px;
+  margin: 10px 0px;
+}
+
+.form-input {
+  padding: 10px;
+  border-radius: 30px;
+  border: 0px solid lightgrey;
+  box-shadow: 0px 0px 20px 1px #ddd;
+  margin-top: 5px;
+}
+
+.info-text {
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+  display: block;
+}
+.center {
+  text-align: center;
+  border: 3px solid green;
+  color: #ff0000
+}
+
+.btn {
+  margin-top: 14px;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  border: 0px solid lightgrey;
+  box-shadow: 0px 0px 20px 1px #ddd;
+}
+    </style>
+  </head>
+  <body>
+<div class="container">
+  <div class="right-container">
+      <h2>Output Interface</h2>
+    </div>
+  <div class="left-container">
+      <h2 style="color:blue;">Temperature And Humidity Sensor Simulator</h2>
+      <div>
+        <form>
+          <div class="form-group">
+            <button class="btn">Start</button>
+            <button class="btn">Stop</button>
+          </div>
+          
+          <div class="form-group">
+            <label class="info-text">The Measurement of rain </label>
+             <input class="form-input" type="number"  placeholder="MM_value">
+          </div>
+          <div class="form-group">
+            <label class="info-text">Temperature Reading</label>
+          </div>
+             <div class="form-group">
+            <label class="info-text">What is the minimum output level of the sensor?</label>
+            <input class="form-input" type="number" name="min_value" placeholder="Minimum Value">
+          </div>
+          <div class="form-group">
+            <label class="info-text">What is the maximum output level of the sensor?</label>
+            <input class="form-input" type="number" name="max_value" placeholder="Maximum Value">
+          </div>
+          </div>
+          <div class="form-group">
+            <label class="info-text">Enter the characteristic equation constants.</label>
+            <input class="form-input" type="text" name="a1" placeholder="a1" style="width: 6%; display: inline;"> <span class="eq-text">x^4 +</span>
+            <input class="form-input" type="text" name="a2" placeholder="a2" style="width: 6%; display: inline;"> <span class="eq-text">x^3 +</span>
+            <input class="form-input" type="text" name="a3" placeholder="a3" style="width: 6%; display: inline;"> <span class="eq-text">x^2 +</span>
+            <input class="form-input" type="text" name="a4" placeholder="a4" style="width: 6%; display: inline;"> <span class="eq-text">x^1 +</span>
+            <input class="form-input" type="text" name="a5" placeholder="a5" style="width: 6%; display: inline;">
+          </div>
+        </form>
+</div>
+</div>
+</div>
+  </body>
+</html>
